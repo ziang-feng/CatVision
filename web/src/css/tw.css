@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 600px;
+    width: 600px;
+    min-height: 600px;
+    min-width: 600px;
+    max-height: 600px;
+    max-width: 600px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#app {
+    height: 600px;
+    width: 600px;
+    min-height: 600px;
+    min-width: 600px;
+    max-height: 600px;
+    max-width: 600px;
+    display: flex;
+}
