@@ -6,13 +6,16 @@ CatVision is a proof-of-concept Chrome Extension that implements Machine Learnin
 
 ## Quick Start
 
-To deploy this project, you will need to deploy the backend Python Flask server that houses the image processing pipeline, and load the Extension into Chrome. 
+To deploy this project, you will need to:
+  1. Deploy the backend Python Flask server that houses the image processing pipeline
+  2. Load the Extension into Chrome. 
 
 The backend can be deployed locally with [Docker](https://www.docker.com/products/docker-desktop). With Docker engine running, run the following Docker CLI commands in the project directory:
 
-  `docker build -t cat-vision-api-img .` to build the container image
-  
-  `docker run -dit -p 5000:5000 --name cat-vision-api cat-vision-api-img` to run the container
+  - `docker build -t cat-vision-api-img .` to build the container image
+  - `docker run -dit -p 5000:5000 --name cat-vision-api cat-vision-api-img` to run the container
+
+**It could take a while for the container to become ready, check the Logs for the Docker container for status information. The extension will not work if the backend is not ready!**
 
 To load the Extension into Chrome, refer to the instructions from [Chrome Developer Documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), use `/web/build` as the extension directory. 
 
