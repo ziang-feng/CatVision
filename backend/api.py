@@ -92,7 +92,6 @@ def hello_world():
             else: cats.append({'flag':0})
         rl.append(cats)
 
-    # get features in batch
     s = len(FTIMG)
     if not s:
         return {'results':[],'qid':payload['qid']}
